@@ -9,9 +9,11 @@ function hashHJ() {
   newHashDecoded = decodeURIComponent(newHash);
   console.log(`Hjumping: ${oldHashDecoded} => ${newHashDecoded}`);
   if (!!oldHashDecoded) {
-      document.getElementsByName(oldHashDecoded)[0].nextElementSibling.style.background = "transparent"
+    document.getElementsByName(oldHashDecoded)[0].parentElement.style.background = "transparent"
+    document.getElementsByName(oldHashDecoded)[0].nextElementSibling.style.background = "transparent"
   }
   if (!!newHashDecoded) {
+    document.getElementsByName(newHashDecoded)[0].parentElement.style.background = "lightyellow"
     document.getElementsByName(newHashDecoded)[0].nextElementSibling.style.background = "yellow"
   }
 }
@@ -20,6 +22,7 @@ function mereHJ() {
   const urlhashstr = decodeURIComponent(location.hash.substring(1));
   console.log(`Hjumping: ${urlhashstr}`);
   if (!!urlhashstr) {
+    document.getElementsByName(urlhashstr)[0].parentElement.style.background = "lightyellow"
     document.getElementsByName(urlhashstr)[0].nextElementSibling.style.background = "yellow"
   }
 }
