@@ -1,5 +1,5 @@
 # highlight-jumping
-highlight target text when click a hash link and jump.
+highlight target text when clicking a hash link and jumping.
 
 
 # install

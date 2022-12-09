@@ -3,7 +3,7 @@
   "author": "Yanying Wang",
   "version": "0.2",
   "homepage_url": "https://github.com/yanyingwang/highlight-jumping",
-  "description": "highlight target text when click a hash link and jumping.",
+  "description": "highlight target text when clicking a hash link and jumping.",
   "page_action": {
     "browser_style": true,
     "default_title": "Highlight Jumping",
