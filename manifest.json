@@ -1,7 +1,7 @@
 {
   "name": "Highlight Jumping",
   "author": "Yanying Wang",
-  "version": "0.1",
+  "version": "0.2",
   "homepage_url": "https://github.com/yanyingwang/highlight-jumping",
   "description": "highlight the text from jumping",
   "page_action": {

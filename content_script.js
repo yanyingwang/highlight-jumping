@@ -1,6 +1,6 @@
 console.log("Loading highlight jumping ...");
 
-function hashHJ() {
+function changeHJ() {
   oldURL = new URL(event.oldURL);
   newURL = new URL(event.newURL);
   oldHash = oldURL.hash.substring(1);
@@ -18,7 +18,7 @@ function hashHJ() {
   }
 }
 
-function mereHJ() {
+function initHJ() {
   const urlhashstr = decodeURIComponent(location.hash.substring(1));
   console.log(`Hjumping: ${urlhashstr}`);
   if (!!urlhashstr) {
@@ -28,11 +28,11 @@ function mereHJ() {
 }
 
 window.onhashchange = (event) => {
-  hashHJ();
+  changeHJ();
 };
 
 window.onload = (event) => {
-  mereHJ();
+  initHJ();
 };
 
 // window.onDOMContentLoaded = () => {
