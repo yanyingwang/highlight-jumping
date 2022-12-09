@@ -1,5 +1,9 @@
 # highlight-jumping
-highlight the text from jumping
+highlight target text when click a hash link and jump.
+
+
+# install
+for firefox go to https://addons.mozilla.org/zh-CN/firefox/addon/highlight-jumping/
 
 
 # dev building to publish browser plugin
