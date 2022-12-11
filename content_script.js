@@ -1,4 +1,4 @@
-console.log("Loading highlight jumping ...");
+console.log("======== Loading highlight jumping ...");
 
 function changeHJ() {
   oldURL = new URL(event.oldURL);
@@ -10,7 +10,9 @@ function changeHJ() {
   console.log(`Hjumping: ${oldHashDecoded} => ${newHashDecoded}`);
   if (!!oldHashDecoded) {
     document.getElementsByName(oldHashDecoded)[0].parentElement.style.background = "transparent"
-    document.getElementsByName(oldHashDecoded)[0].nextElementSibling.style.background = "transparent"
+    if (document.getElementsByName(oldHashDecoded)[0].nextElementSibling) {
+      document.getElementsByName(oldHashDecoded)[0].nextElementSibling.style.background = "transparent"
+    }
   }
   if (!!newHashDecoded) {
     document.getElementsByName(newHashDecoded)[0].parentElement.style.background = "lightyellow"
