@@ -33,9 +33,11 @@ window.onhashchange = (event) => {
   changeHJ();
 };
 
-window.onload = (event) => {
-  initHJ();
-};
+initHJ();
+// window.onload = (event) => {
+//   initHJ();
+// };
+
 
 // window.onDOMContentLoaded = () => {
 //   mereHJ();
